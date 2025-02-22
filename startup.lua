@@ -1,7 +1,7 @@
-local inputChest = peripheral.wrap("right")
-local badItemsChest = peripheral.wrap("back")
-local goodItemsChest = peripheral.wrap("left")
-badlist = {'relics:infinity_ham'}
+local inputChest = peripheral.wrap("left")
+local badItemsChest = peripheral.wrap("top")
+local goodItemsChest = peripheral.wrap("right")
+badlist = {'relics:infinity_ham', 'minecraft:enchanted_book'}
 
 function table_contains(tbl, x)
   found = false
