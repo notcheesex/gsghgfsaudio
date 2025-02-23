@@ -18,7 +18,8 @@ while true do
 
     local itemDetails = inputChest.getItemDetail(slot)
     if not table_contains(badlist, itemDetails.name) then
-      if itemDetails.nbt then
+      print(itemDetails)
+      if itemDetails.nbt or itemDetails.damage then
         inputChest.pushItems(peripheral.getName(badItemsChest), slot)
       else
         inputChest.pushItems(peripheral.getName(goodItemsChest), slot)
